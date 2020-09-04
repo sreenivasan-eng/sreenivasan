@@ -1,0 +1,45 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		 Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    for(int i=1;i<=n;i++) {
+      System.out.printf("Enter the %dst student Quarterly marks:\n",i);
+      System.out.print("English-");
+      float e1=sc.nextFloat();
+      System.out.print("Tamil-");
+      float t1=sc.nextFloat();
+      System.out.print("Maths-");
+      float m1=sc.nextFloat();
+      System.out.print("Science-");
+      float s1=sc.nextFloat();
+      System.out.print("Social-");
+      float ss1=sc.nextFloat();
+      System.out.printf("Enter the %dst student half yearly marks:\n",i);
+      System.out.print("English-");
+      float e2=sc.nextFloat();
+      System.out.print("Tamil-");
+      float t2=sc.nextFloat();
+      System.out.print("Maths-");
+      float m2=sc.nextFloat();
+      System.out.print("Science-");
+      float s2=sc.nextFloat();
+      System.out.print("Social-");
+      float ss2=sc.nextFloat();
+      
+      System.out.println("Average of "+i+" student:");
+      float E=(e1+e2)/2;
+      float T=(t1+t2)/2;
+      float M=(m1+m2)/2;
+      float S=(s1+s2)/2;
+      float SS=(ss1+ss2)/2;
+      System.out.println("English-"+E);
+      System.out.println("Tamil-"+T);
+      System.out.println("Maths-"+M);
+      System.out.println("Science-"+S);
+      System.out.println("Social Science-"+SS);
+      
+    }
+	}
+}
